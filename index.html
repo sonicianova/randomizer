@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+	<!-- Load the javascript and css files -->
+	<script type="text/javascript" src="main.js"></script>
+	<link type="text/css" href="main.css" rel="stylesheet"/>
+	<link href="shortcutIcon.png" rel="shortcut icon"/>
+	<title>Alban Randomizer</title>
+</head>
+<body>
+	<!-- Main container -->
+	<div id="divMainContainer">
+		<!-- Header -->
+		<div id="divHeader">
+			<h2 id="hdrTitle">Alban Randomizer <span id="spnSubtitle">VERSION 0.0.1</span></h2>
+		</div>
+		<!-- Body -->
+		<div id="divBody">
+			<!-- Menu -->
+			<div id="divMenu">
+				<p>Add object:</p>
+				<input type="text" id="txtObject" placeholder="Object"onkeydown = "if (event.keyCode == 13) document.getElementById('btnInputObject').click()"   />
+				<button type="button" id="btnInputObject" onclick="inputName()">Input</button>
+				<button type="button" id="btnRandomize" onclick="randomObject()">Pick a Random Object</button>
+				<p id="lblTotal">Total: 0</p><br><p>This program allows you to input or take out any number of objects and then picks a random object from that list! There are also no repeats until the entire set of objects has been gone through!</p>
+			</div>
+			<!-- Display -->
+			<div id="divDisplay"></div>
+		</div>
+	</div>
+</body>

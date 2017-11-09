@@ -1,0 +1,39 @@
+/* Make all standard webpage elements inline. */
+p {
+	display: inline-block;
+	font-family: Arial;
+}
+h2 {
+	font-family: Arial;
+	color: white;
+}
+button {
+	display: inline-block;
+}
+#txtObject {
+	display: inline-block;
+}
+
+/* Style the header and tools. */
+#divHeader {
+	background-color:blue;
+	width:100%;
+	position:relative;
+	padding:5px;
+	padding-left:15px;
+	left: -10px;
+	top: -10px;
+}
+#spnSubtitle {
+	font-size:12px;
+}
+
+/* Style the objects. */
+.object {
+	font-family: Arial;
+	display: "inline-block";
+}
+.object:hover {
+	color: grey;
+	background-color: yellow;
+}
